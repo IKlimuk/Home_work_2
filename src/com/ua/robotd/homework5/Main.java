@@ -25,7 +25,8 @@ public class Main {
         } else if (numberOne < numberTwo) {
             System.out.println("The minimum number: " + numberOne);
         }
-        //checking the number for parity
+        
+//checking the number for parity
         Scanner number2 = new Scanner(System.in);
         System.out.print("Enter a number to check for parity: ");
         int numberParity = number2.nextInt();
