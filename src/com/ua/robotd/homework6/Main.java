@@ -9,7 +9,7 @@ public class Main {
             System.out.print(i + " ");
         }
 
-        // 2.Оutput of even numbers from 1 to 100
+        // 2. Оutput of even numbers from 1 to 100
         System.out.println();
         System.out.print("2. Even number from 1 to 100: ");
         for (int i = 1; i <= 100; i++) {
@@ -27,7 +27,7 @@ public class Main {
         }
         System.out.println("3. Factorial of the number " + number + ": " + factorial);
 
-        // 4.Fibonacci number derivation
+        // 4. Fibonacci number derivation
         System.out.print("4. Fibonacci: ");
         int f0 = 0;
         int f1 = 1;
