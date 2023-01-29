@@ -9,6 +9,5 @@ public class Main {
         int lastnumber= last-1;
         System.out.print("First letter: " + text.charAt(0));
         System.out.print("Last letter: " + text.charAt(lastnumber));
-        // prov
     }
 }
