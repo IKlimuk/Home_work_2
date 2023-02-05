@@ -19,19 +19,19 @@ public class Main {
     }
 
     // 1.
-    static int cubeOfNumber(int Number) {
-        return Number * Number * Number;
+    static int cubeOfNumber(int number) {
+        return number * number * number;
     }
 
     //2.
-    static void printSymbolNumberOfTimes(int Number2) {
-        printSymbolNumberOfTimes(Number2, '*');
+    static void printSymbolNumberOfTimes(int number2) {
+        printSymbolNumberOfTimes(number2, '*');
     }
 
     //3.
-    static void printSymbolNumberOfTimes(int Number, char Symbol) {
+    static void printSymbolNumberOfTimes(int number, char Symbol) {
 
-        for (int i = 0; i < Number; i++) {
+        for (int i = 0; i < number; i++) {
             System.out.print(Symbol + " ");
         }
     }
