@@ -14,7 +14,6 @@ public class Teacher extends Person {
     @Override
     public void startLesson() {
         System.out.println(name + " " + lastName + " starts teaching the " + subjects);
-
     }
 
     public String getName() {

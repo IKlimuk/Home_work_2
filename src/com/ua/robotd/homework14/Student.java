@@ -16,7 +16,6 @@ public class Student extends Person {
         this.lastName = lastName;
         this.numberCourse = numberCourse;
     }
-
     public String getName() {
         return name;
     }
