@@ -1,0 +1,46 @@
+use klimuk;
+
+create table country (
+id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name varchar (40),
+area double
+);
+
+create table city (
+id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name varchar (40),
+number_of_population int
+);
+
+select * from country;
+select * from city;
+
+ADD COLUMN city_id int
+ALTER TABLE country
+ADD FOREIGN KEY (city_id) REFERENCES city(id);
+
+select * from country;
+
+insert into country(name, area) values ('Ukraine', 603700.5);
+insert into country(name, area) values ('Poland', 322575.4);
+insert into country(name, area) values ('England', 243610.2);
+
+select * from country;
+
+insert into city(name, number_of_population) values ('Kyiv', 3259456);
+insert into city(name, number_of_population) values ('Warsaw', 1756325);
+insert into city(name, number_of_population) values ('London', 8978656);
+
+select * from city;
+
+update country set city_id = 1 where id = 1;
+update country set city_id = 2 where id = 2;
+update country set city_id = 3 where id = 3;
+
+select * from country;
+
+select * from country con left join city c on con.city_id = c.id
+select * from country con right join city c on con.city_id = c.id
+select * from country con inner join city c on con.city_id = c.id
+
+select con.name, c.name from country con left join city c on con.city_id = c.id
