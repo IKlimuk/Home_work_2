@@ -42,5 +42,4 @@ select * from country;
 select * from country con left join city c on con.city_id = c.id
 select * from country con right join city c on con.city_id = c.id
 select * from country con inner join city c on con.city_id = c.id
-
 select con.name, c.name from country con left join city c on con.city_id = c.id
